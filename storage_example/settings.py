@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'rest_framework',
     'example',
 
 ]
@@ -49,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'storage_example.urls'
@@ -136,3 +139,5 @@ AWS_SECRET_ACCESS_KEY = 'qeD3rkAm4q8vJsn2zKQJAOJ/vcrPJYu8/rXvy8gP'
 AWS_STORAGE_BUCKET_NAME = 'guangjian'
 
 AWS_QUERYSTRING_AUTH = False
+
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
