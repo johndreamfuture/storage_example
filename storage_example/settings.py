@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4zoo2fz@5j1bvdz4=^osq=%+7%y_@p62k%%9s=++ej^0n#18)w'
+SECRET_KEY = '***'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -134,8 +134,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
-AWS_ACCESS_KEY_ID = 'AKIAS344XJH7K664VN5B'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'xxxxxxxx'
+AWS_SECRET_ACCESS_KEY = 'yyyyyyyy'
 AWS_STORAGE_BUCKET_NAME = 'guangjian'
 
 AWS_QUERYSTRING_AUTH = False
